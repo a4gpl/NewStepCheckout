@@ -29,4 +29,4 @@ Add `marc-mabe/php-enum` to the project's `composer.json` dependencies and run `
 4. Should work! 
 
 
-#####This project is for illustrative purposes only. It is forbidden to copy or use anything without the consent of the author!
+##### This project is for illustrative purposes only. It is forbidden to copy or use anything without the consent of the author!
