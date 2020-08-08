@@ -1,0 +1,53 @@
+//
+//  Variables
+//  _____________________________________________
+@new_step_checkout__product_count: 4;
+
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .page-layout-1column {
+        .new-step-checkout {
+            .product-list-wrapper {
+                .products-grid {
+                    .product-item {
+                        cursor: pointer;
+                        margin-left: 0;
+                        width: calc((100% - 4%) / @new_step_checkout__product_count);
+                    }
+                }
+            }
+
+
+            .qty-container {
+                position: relative;
+                width: 90px;
+
+                .input-text {
+                    padding: 0 21px;
+                    text-align: center;
+                }
+
+                .arrows {
+                    cursor: pointer;
+                    font-weight: @font-weight__bold;
+                    height: 30px;
+                    line-height: 30px;
+                    position: absolute;
+                    text-align: center;
+                    top: 0;
+                    width: 24px;
+                    border: 1px solid #c2c2c2;
+                }
+
+                .value-dec {
+                    right: 0;
+                }
+
+            }
+        }
+    }
+}

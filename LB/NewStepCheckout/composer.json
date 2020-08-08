@@ -1,0 +1,31 @@
+{
+    "name": "lb/newstepcheckout",
+    "description": "N/A",
+    "require": {
+        "php": "~7.0.0",
+        "marc-mabe/php-enum": "*",
+        "magento/magento-composer-installer": "*",
+        "magento/module-checkout": "100.2.3"
+    },
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "type": "magento2-module",
+    "version": "1.2.0",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "LB\\NewStepCheckout\\": ""
+        }
+    },
+    "extra": {
+        "map": [
+            [
+                "LB/NewStepCheckout"
+            ]
+        ]
+    }
+}

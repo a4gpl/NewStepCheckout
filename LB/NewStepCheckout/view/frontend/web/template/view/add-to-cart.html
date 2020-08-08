@@ -1,0 +1,36 @@
+<div class="add-to-cart-form">
+  <form data-bind="attr: {action: formUrl}" method="post">
+
+    <input type="hidden" name="product" ko-value="product.id">
+    <input type="hidden" name="uenc" ko-value="uenc">
+    <input type="hidden" name="form_key" ko-value="formKey"/>
+
+    <div class="fieldset">
+
+      <div class="field qty">
+        <label class="label" for="qty_selector">
+          <span translate="'Qty'"/>
+        </label>
+        <div class="control">
+          <div class="qty-container">
+            <div class="arrows value-inc" data-bind="click: qtyValueInc">+</div>
+            <input type="hidden" name="qty" ko-value="qtyValue">
+            <input id="qty_selector" class="input-text" name="qty_selector" readonly type="text"
+                   data-bind="
+                  value: qtyValue,
+                  valueUpdate: 'keyup'"
+            >
+            <div class="arrows value-dec" data-bind="click: qtyValueDec">-</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="submit" title="Add to Cart" class="action primary tocart">
+          <span translate="'Add to Cart'"/>
+        </button>
+      </div>
+
+    </div>
+  </form>
+</div>
