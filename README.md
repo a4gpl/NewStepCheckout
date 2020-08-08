@@ -24,7 +24,7 @@ Add `marc-mabe/php-enum` to the project's `composer.json` dependencies and run `
 
 1. Go to the module directory
 `cd LB/NewStepCheckout`.
-2. Run the command `nm install`
+2. Run the command `npm install`
 3. Run the command `npm run ts:build`
 4. Should work! 
 
